@@ -22,6 +22,13 @@ Este repositorio contiene todo lo necesario para desarrollar y comparar distinto
 Partimos de un dataset con **10 000 registros** (5 000 phishing, 5 000 legítimos) y **48 características** extraídas vía Selenium WebDriver.
 
 ---
+## 📄 Informe del Proyecto
+
+Puedes consultar el informe técnico completo del proyecto en el siguiente enlace:
+
+[📘 Informe_Phishing_For_ML.pdf](./Informe_Phishing_For_ML.pdf)
+
+---
 
 ## 📋 Estructura de las variables de nuestro dataset.
 
@@ -75,4 +82,7 @@ Partimos de un dataset con **10 000 registros** (5 000 phishing, 5 000 legítimo
 | 46  | AbnormalExtFormActionR                       | Categorical   | Form action foreign domain, “about:blank”, or empty                                              |
 | 47  | ExtMetaScriptLinkRT                          | Categorical   | Pct. of meta, script, link tags with external URLs                                               |
 | 48  | PctExtNullSelfRedirect-HyperlinksRT          | Categorical   | Pct. of hyperlinks external, “#,” or “JavaScript:: void(0)”                                      |
+
+---
+
 
