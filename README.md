@@ -21,12 +21,77 @@
 Este repositorio contiene todo lo necesario para desarrollar y comparar distintos modelos de Machine Learning destinados a la **detección de páginas de phishing**.  
 Partimos de un dataset con **10 000 registros** (5 000 phishing, 5 000 legítimos) y **48 características** extraídas vía Selenium WebDriver.
 
+### 🎯 Objetivos del Proyecto
+- Desarrollar un sistema robusto de detección de phishing mediante técnicas de Machine Learning
+- Comparar el rendimiento de diferentes algoritmos de clasificación
+- Aplicar técnicas de reducción de dimensionalidad y selección de características
+- Optimizar hiperparámetros para mejorar el rendimiento de los modelos
+- Evaluar el impacto de diferentes técnicas de preprocesamiento en la precisión del modelo
+
+### 🛠️ Metodología
+El proyecto sigue una metodología estructurada que incluye:
+1. **Análisis exploratorio de datos** - Comprensión del dataset y visualización de patrones
+2. **Reducción de dimensionalidad** - Aplicación de técnicas como PCA y selección de características
+3. **Modelado y optimización** - Implementación de múltiples algoritmos con optimización de hiperparámetros
+4. **Evaluación comparativa** - Análisis de métricas de rendimiento y selección del mejor modelo
+
 ---
 ## 📄 Informe del Proyecto
 
 Puedes consultar el informe técnico completo del proyecto en el siguiente enlace:
 
 [📘 Informe_Phishing_For_ML.pdf](./Informe_Phishing_For_ML.pdf)
+
+---
+
+## 📁 Estructura del Proyecto
+
+### 📊 Análisis Exploratorio de Datos
+- **`Exploring_Data.ipynb`** - Análisis inicial del dataset, visualización de distribuciones, correlaciones entre variables y patrones en los datos
+
+### 🔍 Reducción de Dimensionalidad (`DimensionReduction/`)
+Esta carpeta contiene los experimentos de reducción de dimensionalidad y selección de características:
+
+- **`PCA_Feature_extraction.ipynb`** - Implementación del Análisis de Componentes Principales (PCA) para extracción de características
+- **`Features_Selection_Filter.ipynb`** - Métodos de selección de características basados en filtros (correlación, chi-cuadrado, ANOVA)
+- **`RF_&_SVM_Features_Selection_Filter.ipynb`** - Selección de características aplicada específicamente a Random Forest y SVM usando métodos de filtro
+- **`Feature_Selection_RFECV_&_SFS.ipynb`** - Eliminación recursiva de características con validación cruzada (RFECV) y selección secuencial hacia adelante (SFS)
+- **`RF_&_SVM_&_Features_Selection_Wrapper.ipynb`** - Métodos wrapper para selección de características en Random Forest y SVM
+
+### 🤖 Modelos con Optimización de Hiperparámetros (`ModelsWithOptimizationHyperparameters/`)
+Esta carpeta contiene la implementación y optimización de diferentes algoritmos de Machine Learning:
+
+- **`KNN.ipynb`** - K-Nearest Neighbors con búsqueda de hiperparámetros óptimos
+- **`LogisticRegression.ipynb`** - Regresión Logística con regularización y optimización de parámetros
+- **`MLP.ipynb`** - Multi-Layer Perceptron (Red Neuronal) con optimización de arquitectura y parámetros
+- **`RandomForest-Copy1.ipynb`** - Random Forest con optimización de número de árboles y profundidad
+- **`SVM.ipynb`** - Support Vector Machine con optimización de kernel y parámetros
+
+### 📄 Datos
+- **`Phishing_Legitimate_full.csv`** - Dataset principal con 10,000 registros balanceados (5,000 phishing + 5,000 legítimos)
+
+---
+
+---
+
+## 🧪 Técnicas y Algoritmos Implementados
+
+### 📐 Reducción de Dimensionalidad
+- **PCA (Principal Component Analysis)** - Extracción de componentes principales para reducir la dimensionalidad
+- **Selección de Características por Filtros** - Chi-cuadrado, ANOVA F-test, correlación
+- **Selección de Características Wrapper** - RFECV (Recursive Feature Elimination with Cross-Validation)
+- **Selección Secuencial** - SFS (Sequential Forward Selection)
+
+### 🤖 Algoritmos de Machine Learning
+- **K-Nearest Neighbors (KNN)** - Clasificador basado en proximidad
+- **Regresión Logística** - Modelo lineal con regularización L1/L2
+- **Support Vector Machine (SVM)** - Clasificador con kernels RBF, polinomial y lineal
+- **Random Forest** - Ensemble de árboles de decisión
+- **Multi-Layer Perceptron (MLP)** - Red neuronal multicapa
+
+### 🎯 Técnicas de Optimización
+- **Usamos un Framework de busqueda de hiperparámetros** llamado Optuna
+- **Métricas de Evaluación** - Accuracy, Precision, Recall, F1-Score, ROC-AUC
 
 ---
 
