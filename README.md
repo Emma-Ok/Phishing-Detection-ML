@@ -47,7 +47,7 @@ El proyecto sigue una metodología estructurada que incluye:
 
 Puedes consultar el informe técnico completo del proyecto en el siguiente enlace:
 
-[📘 Informe_Phishing_For_ML.pdf](./Informe_Phishing_For_ML.pdf)
+[📘 Informe_Phishing_For_ML.pdf](.Informe_Phishing_For_ML_Final.pdf)
 
 ---
 
