@@ -17,6 +17,13 @@
 
 ---
 
+## 🎥 Video de Demostración
+
+Puedes ver la demostración del proyecto en el siguiente enlace:
+
+[Ver en YouTube](https://www.youtube.com/watch?v=uMqmyF75rGs&feature=youtu.be)
+
+
 ## 🔍 Descripción
 Este repositorio contiene todo lo necesario para desarrollar y comparar distintos modelos de Machine Learning destinados a la **detección de páginas de phishing**.  
 Partimos de un dataset con **10 000 registros** (5 000 phishing, 5 000 legítimos) y **48 características** extraídas vía Selenium WebDriver.
@@ -84,7 +91,7 @@ Esta carpeta contiene la implementación y optimización de diferentes algoritmo
 
 ### 🤖 Algoritmos de Machine Learning
 - **K-Nearest Neighbors (KNN)** - Clasificador basado en proximidad
-- **Regresión Logística** - Modelo lineal con regularización L1/L2
+- **Regresión Logística** - Modelo lineal con regularización L2
 - **Support Vector Machine (SVM)** - Clasificador con kernels RBF, polinomial y lineal
 - **Random Forest** - Ensemble de árboles de decisión
 - **Multi-Layer Perceptron (MLP)** - Red neuronal multicapa
